@@ -3,6 +3,7 @@
     height: 100%;
     font-family: sans-serif;
     background: #ffffff;
+    margin: 3.3%;
     &__content{
         grid-area: contenido;
         padding: 10px;
@@ -27,6 +28,7 @@
     
     &__imagen{
         grid-area: imagen;
+        width: 100%;
     }
     &-side{
         display: grid;
