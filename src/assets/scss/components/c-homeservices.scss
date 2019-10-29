@@ -1,0 +1,60 @@
+.c-homeservices{
+    //border: 2px solid blue;
+    height: 100%;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+    "contenido imagen";
+
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+    &--dark{
+        background: #072146;
+    }
+    &--semi-dark{
+        background: #043263;
+    }
+    &--semi-light{
+        background: #1464A5;
+    }
+    &--light{
+        background: #237ABA;
+    }
+   
+
+    &--left{
+        margin-right: 0px;
+    }
+    &--right{
+        margin-left: 0px;
+    }
+
+    &__imagen{
+        grid-area: imagen;
+    }
+    &__content{
+        grid-area: contenido;
+        padding: 10%;
+        font-family: sans-serif;
+        
+    }
+    &__title{
+        color: #ffffff;
+        line-height: 1.5rem;
+        
+        font-size: 30px;
+        text-align: left;
+        
+    }
+    &__text{
+        color: #ffffff;
+        line-height: 1.3rem;
+        font-size: 13px;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    
+}

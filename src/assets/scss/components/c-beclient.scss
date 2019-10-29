@@ -1,0 +1,54 @@
+.c-beclient{
+    //border: 2px solid blue;
+    height: 100%;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+    "imagen contenido";
+
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+    
+   
+
+    &--left{
+        margin-right: 20px;
+    }
+    &--right{
+        margin-left: 20px;
+    }
+
+    &__imagen{
+        grid-area: imagen;
+    }
+    &__content{
+        grid-area: contenido;
+        padding: 10px;
+        font-family: sans-serif;
+        
+    }
+    &__title{
+        color: #121212;
+        line-height: 1.5rem;
+        
+        font-size: 20px;
+        text-align: left;
+        
+    }
+    &__text{
+        color: #4e4e4e;
+        line-height: 1.3rem;
+        font-size: 13px;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}

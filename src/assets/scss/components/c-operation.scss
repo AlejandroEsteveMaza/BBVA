@@ -1,0 +1,42 @@
+.c-operation{
+    //border: 2px solid blue;
+    height: 100%;
+    font-family: sans-serif;
+    background: #ffffff;
+    &__content{
+        grid-area: contenido;
+        padding: 10px;
+        font-family: sans-serif;
+        
+    }
+    &__title{
+        color: #121212;
+        line-height: 2.0rem;
+        
+        font-size: 25px;
+        text-align: left;
+        
+    }
+    &__text{
+        line-height: 1.3rem;
+        font-size: 13px;
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    &__imagen{
+        grid-area: imagen;
+    }
+    &-side{
+        display: grid;
+        grid-template-areas:
+        "imagen contenido";
+        
+    }
+    
+}
+
+
+
+

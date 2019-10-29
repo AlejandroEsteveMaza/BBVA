@@ -1,0 +1,41 @@
+.c-seccion{
+    
+    padding-top: 9px;
+    padding-bottom: 40px;
+    
+
+    &__titulo{
+        text-align:center;
+        line-height:51px;
+        font-size: xx-large;
+        color: #363636;
+        font-weight: normal;
+        font-family: sans-serif;
+        margin-top: 25px;
+        margin-bottom: 40px;
+        &--gris{
+            color: #363636;
+        }
+        &--blanco{
+            color: #363636;
+            
+        }
+        &--azul{
+            color: #ffffff;
+        }
+    }
+    &__contenido{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    &--gris{
+        background: #e9e9e9;
+    }
+    &--blanco{
+        background: #ffffff;
+        
+    }
+    &--azul{
+        background: #004481;
+    }
+}

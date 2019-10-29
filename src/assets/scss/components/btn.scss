@@ -1,0 +1,20 @@
+.btn{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: sans-serif;
+    
+
+    &-center{
+        background: #018787;
+        padding: 1.5%;
+        display: inline-block;
+    }
+
+
+    &-transparent{
+        background:transparent;
+        color: #176aaa;
+        font-size: 0.8rem;
+    }
+}

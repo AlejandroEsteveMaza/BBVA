@@ -1,0 +1,47 @@
+.c-ayuda{
+    //border: 2px solid blue;
+    height: 100%;
+    padding-left: 25%;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas:
+    "imagen"
+    "contenido";
+
+   
+    &__cabecera{
+        grid-area: imagen;
+        background-color:#E9E9E9;
+        border:1px solid #E9E9E9;    
+        height:90%;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        width:70%;
+    }
+    &__imagen{
+        padding: 30%;
+    }
+    &__content{
+        grid-area: contenido;
+        padding: 10px;
+        font-family: sans-serif;
+        
+    }
+    &__title{
+        color: #000000;
+        line-height: 1.5rem;
+        
+        font-size: 20px;
+        text-align: left;
+        
+    }
+    &__subtitle{
+        color: #4583B6;
+        line-height: 1.5rem;
+        
+        font-size: 20px;
+        text-align: left;
+        
+    }
+}
