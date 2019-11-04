@@ -1,0 +1,46 @@
+.menu {
+  background-color: $color-background-menu;
+  padding: 20px 150px;
+  display: flex;
+  font-family: "calibri", Garamond, "Comic Sans";
+  margin-left: -20px;
+  margin-right: -8px;
+
+  @if $debug {
+    border: 1px solid red;
+  } @else {
+    border: 1px solid black;
+  }
+
+  &__icon {
+    padding-right: 7px;
+  }
+
+  &__item {
+    display:inline;
+    &--derecha {
+      margin-left: auto;
+    }
+  }
+  &__enlace {
+    @for $i from 1 through 5 {
+      &--tamanyo-#{$i} {
+        font-size: ($i * 2)+8px;
+      }
+    }
+
+    @each $talla, $iSize in $tallas {
+      &--tamanyo-#{$talla} {
+        font-size: #{$iSize}px;
+      }
+    }
+
+    color: #8fb5d8;
+    text-decoration: none;
+    margin-right: 3.2rem;
+  }
+}
+
+.menu a:hover {
+  color: white;
+}

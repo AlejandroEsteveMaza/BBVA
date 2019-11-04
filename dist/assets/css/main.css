@@ -418,6 +418,48 @@ html {
     .l-columns--movil-1columns {
       grid-template-columns: repeat(1, 1fr); } }
 
+.menu {
+  background-color: #004481;
+  padding: 20px 150px;
+  display: flex;
+  font-family: "calibri", Garamond, "Comic Sans";
+  margin-left: -20px;
+  margin-right: -8px;
+  border: 1px solid black; }
+  .menu__icon {
+    padding-right: 7px; }
+  .menu__item {
+    display: inline; }
+    .menu__item--derecha {
+      margin-left: auto; }
+  .menu__enlace {
+    color: #8fb5d8;
+    text-decoration: none;
+    margin-right: 3.2rem; }
+    .menu__enlace--tamanyo-1 {
+      font-size: 10px; }
+    .menu__enlace--tamanyo-2 {
+      font-size: 12px; }
+    .menu__enlace--tamanyo-3 {
+      font-size: 14px; }
+    .menu__enlace--tamanyo-4 {
+      font-size: 16px; }
+    .menu__enlace--tamanyo-5 {
+      font-size: 18px; }
+    .menu__enlace--tamanyo-XS {
+      font-size: 11px; }
+    .menu__enlace--tamanyo-S {
+      font-size: 13px; }
+    .menu__enlace--tamanyo-M {
+      font-size: 15px; }
+    .menu__enlace--tamanyo-L {
+      font-size: 20px; }
+    .menu__enlace--tamanyo-XL {
+      font-size: 30px; }
+
+.menu a:hover {
+  color: white; }
+
 .c-operation {
   height: 100%;
   font-family: sans-serif;
