@@ -419,21 +419,18 @@ html {
       grid-template-columns: repeat(1, 1fr); } }
 
 .menu {
-  background-color: #004481;
-  padding: 20px 150px;
+  padding-top: 25px;
+  padding-bottom: 24px;
   display: flex;
   font-family: "calibri", Garamond, "Comic Sans";
   margin-left: -20px;
-  margin-right: -8px;
-  border: 1px solid black; }
-  .menu__icon {
-    padding-right: 7px; }
+  margin-right: -8px; }
   .menu__item {
     display: inline; }
     .menu__item--derecha {
       margin-left: auto; }
   .menu__enlace {
-    color: #8fb5d8;
+    color: #99b4bb;
     text-decoration: none;
     margin-right: 3.2rem; }
     .menu__enlace--tamanyo-1 {
@@ -456,15 +453,13 @@ html {
       font-size: 20px; }
     .menu__enlace--tamanyo-XL {
       font-size: 30px; }
-
-.menu a:hover {
-  color: white; }
+    .menu__enlace:hover {
+      color: #ffffff; }
 
 .c-operation {
   height: 100%;
   font-family: sans-serif;
-  background: #ffffff;
-  margin: 3.3%; }
+  background: #ffffff; }
   .c-operation__content {
     grid-area: contenido;
     padding: 10px;
@@ -489,7 +484,9 @@ html {
 
 .c-seccion {
   padding-top: 9px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  padding-left: 15%;
+  padding-right: 15%; }
   .c-seccion__titulo {
     text-align: center;
     line-height: 51px;
@@ -505,9 +502,6 @@ html {
       color: #363636; }
     .c-seccion__titulo--azul {
       color: #ffffff; }
-  .c-seccion__contenido {
-    padding-left: 15%;
-    padding-right: 15%; }
   .c-seccion--gris {
     background: #e9e9e9; }
   .c-seccion--blanco {
