@@ -1,10 +1,6 @@
 .c-seccion{
     
-    padding-top: 9px;
-    padding-bottom: 40px;
-    padding-left: 15%;
-    padding-right: 15%;
-
+    
     &__titulo{
         text-align:center;
         line-height:51px;
@@ -38,4 +34,65 @@
     &--azul{
         background: #004481;
     }
+    &--azul-oscuro{
+        background: #072146;
+    }
+    @each $talla, $iSize in $tallas {
+        &--padding-#{$talla} {
+            padding-top: #{$iSize};
+            padding-bottom: #{$iSize};
+            padding-left: #{$iSize};
+            padding-right: #{$iSize};
+        }
+        &--padding-vertical-#{$talla} {
+            padding-top: #{$iSize};
+            padding-bottom: #{$iSize};
+        }
+        &--padding-horizontal-#{$talla} {
+            padding-left: #{$iSize};
+            padding-right: #{$iSize};
+        }
+        &--padding-top-#{$talla} {
+            padding-top: #{$iSize};
+        }
+        &--padding-bottom-#{$talla} {
+            padding-bottom: #{$iSize};
+        }
+        &--padding-left-#{$talla} {
+            padding-left: #{$iSize};
+        }
+        &--padding-right-#{$talla} {
+            padding-right: #{$iSize};
+        }
+      }
+      @media(max-width:900px){
+        @each $talla, $iSize in $tallas {
+            &--isMovil-padding-#{$talla} {
+                padding-top: #{$iSize};
+                padding-bottom: #{$iSize};
+                padding-left: #{$iSize};
+                padding-right: #{$iSize};
+            }
+            &--isMovil-padding-vertical-#{$talla} {
+                padding-top: #{$iSize};
+                padding-bottom: #{$iSize};
+            }
+            &--isMovil-padding-horizontal-#{$talla} {
+                padding-left: #{$iSize};
+                padding-right: #{$iSize};
+            }
+            &--isMovil-padding-top-#{$talla} {
+                padding-top: #{$iSize};
+            }
+            &--isMovil-padding-bottom-#{$talla} {
+                padding-bottom: #{$iSize};
+            }
+            &--isMovil-padding-left-#{$talla} {
+                padding-left: #{$iSize};
+            }
+            &--isMovil-padding-right-#{$talla} {
+                padding-right: #{$iSize};
+            }
+          }
+      }
 }

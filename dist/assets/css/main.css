@@ -419,9 +419,11 @@ html {
       grid-template-columns: repeat(1, 1fr); } }
 
 .menu {
-  padding-top: 25px;
-  padding-bottom: 24px;
+  /*   padding-top: 25px;
+  padding-bottom: 24px; */
   display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
   font-family: "calibri", Garamond, "Comic Sans";
   margin-left: -20px;
   margin-right: -8px; }
@@ -432,7 +434,9 @@ html {
   .menu__enlace {
     color: #99b4bb;
     text-decoration: none;
-    margin-right: 3.2rem; }
+    margin-right: 2.7rem; }
+    .menu__enlace:hover {
+      color: #ffffff; }
     .menu__enlace--tamanyo-1 {
       font-size: 10px; }
     .menu__enlace--tamanyo-2 {
@@ -444,17 +448,35 @@ html {
     .menu__enlace--tamanyo-5 {
       font-size: 18px; }
     .menu__enlace--tamanyo-XS {
-      font-size: 11px; }
+      font-size: 0%; }
     .menu__enlace--tamanyo-S {
-      font-size: 13px; }
+      font-size: 5%; }
     .menu__enlace--tamanyo-M {
-      font-size: 15px; }
+      font-size: 10%; }
     .menu__enlace--tamanyo-L {
-      font-size: 20px; }
+      font-size: 15%; }
     .menu__enlace--tamanyo-XL {
-      font-size: 30px; }
-    .menu__enlace:hover {
-      color: #ffffff; }
+      font-size: 20%; }
+    .menu__enlace--margin-right-XS {
+      margin-right: 2rem; }
+    .menu__enlace--margin-right-S {
+      margin-right: 2.4rem; }
+    .menu__enlace--margin-right-M {
+      margin-right: 2.7rem; }
+    .menu__enlace--margin-right-L {
+      margin-right: 3rem; }
+    .menu__enlace--margin-right-XL {
+      margin-right: 3.5rem; }
+  .menu.menu--tamanyo-letra-1 .menu__enlace {
+    font-size: 10px; }
+  .menu.menu--tamanyo-letra-2 .menu__enlace {
+    font-size: 12px; }
+  .menu.menu--tamanyo-letra-3 .menu__enlace {
+    font-size: 14px; }
+  .menu.menu--tamanyo-letra-4 .menu__enlace {
+    font-size: 16px; }
+  .menu.menu--tamanyo-letra-5 .menu__enlace {
+    font-size: 18px; }
 
 .c-operation {
   height: 100%;
@@ -482,32 +504,260 @@ html {
     display: grid;
     grid-template-areas: "imagen contenido"; }
 
-.c-seccion {
-  padding-top: 9px;
-  padding-bottom: 40px;
+.c-seccion__titulo {
+  text-align: center;
+  line-height: 51px;
+  font-size: xx-large;
+  color: #363636;
+  font-weight: normal;
+  font-family: sans-serif;
+  margin-top: 25px;
+  margin-bottom: 40px; }
+  .c-seccion__titulo--gris {
+    color: #363636; }
+  .c-seccion__titulo--blanco {
+    color: #363636; }
+  .c-seccion__titulo--azul {
+    color: #ffffff; }
+
+.c-seccion--gris {
+  background: #e9e9e9; }
+
+.c-seccion--blanco {
+  background: #ffffff; }
+
+.c-seccion--azul {
+  background: #004481; }
+
+.c-seccion--azul-oscuro {
+  background: #072146; }
+
+.c-seccion--padding-XS {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%; }
+
+.c-seccion--padding-vertical-XS {
+  padding-top: 0%;
+  padding-bottom: 0%; }
+
+.c-seccion--padding-horizontal-XS {
+  padding-left: 0%;
+  padding-right: 0%; }
+
+.c-seccion--padding-top-XS {
+  padding-top: 0%; }
+
+.c-seccion--padding-bottom-XS {
+  padding-bottom: 0%; }
+
+.c-seccion--padding-left-XS {
+  padding-left: 0%; }
+
+.c-seccion--padding-right-XS {
+  padding-right: 0%; }
+
+.c-seccion--padding-S {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.c-seccion--padding-vertical-S {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.c-seccion--padding-horizontal-S {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.c-seccion--padding-top-S {
+  padding-top: 5%; }
+
+.c-seccion--padding-bottom-S {
+  padding-bottom: 5%; }
+
+.c-seccion--padding-left-S {
+  padding-left: 5%; }
+
+.c-seccion--padding-right-S {
+  padding-right: 5%; }
+
+.c-seccion--padding-M {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.c-seccion--padding-vertical-M {
+  padding-top: 10%;
+  padding-bottom: 10%; }
+
+.c-seccion--padding-horizontal-M {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.c-seccion--padding-top-M {
+  padding-top: 10%; }
+
+.c-seccion--padding-bottom-M {
+  padding-bottom: 10%; }
+
+.c-seccion--padding-left-M {
+  padding-left: 10%; }
+
+.c-seccion--padding-right-M {
+  padding-right: 10%; }
+
+.c-seccion--padding-L {
+  padding-top: 15%;
+  padding-bottom: 15%;
   padding-left: 15%;
   padding-right: 15%; }
-  .c-seccion__titulo {
-    text-align: center;
-    line-height: 51px;
-    font-size: xx-large;
-    color: #363636;
-    font-weight: normal;
-    font-family: sans-serif;
-    margin-top: 25px;
-    margin-bottom: 40px; }
-    .c-seccion__titulo--gris {
-      color: #363636; }
-    .c-seccion__titulo--blanco {
-      color: #363636; }
-    .c-seccion__titulo--azul {
-      color: #ffffff; }
-  .c-seccion--gris {
-    background: #e9e9e9; }
-  .c-seccion--blanco {
-    background: #ffffff; }
-  .c-seccion--azul {
-    background: #004481; }
+
+.c-seccion--padding-vertical-L {
+  padding-top: 15%;
+  padding-bottom: 15%; }
+
+.c-seccion--padding-horizontal-L {
+  padding-left: 15%;
+  padding-right: 15%; }
+
+.c-seccion--padding-top-L {
+  padding-top: 15%; }
+
+.c-seccion--padding-bottom-L {
+  padding-bottom: 15%; }
+
+.c-seccion--padding-left-L {
+  padding-left: 15%; }
+
+.c-seccion--padding-right-L {
+  padding-right: 15%; }
+
+.c-seccion--padding-XL {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.c-seccion--padding-vertical-XL {
+  padding-top: 20%;
+  padding-bottom: 20%; }
+
+.c-seccion--padding-horizontal-XL {
+  padding-left: 20%;
+  padding-right: 20%; }
+
+.c-seccion--padding-top-XL {
+  padding-top: 20%; }
+
+.c-seccion--padding-bottom-XL {
+  padding-bottom: 20%; }
+
+.c-seccion--padding-left-XL {
+  padding-left: 20%; }
+
+.c-seccion--padding-right-XL {
+  padding-right: 20%; }
+
+@media (max-width: 900px) {
+  .c-seccion--isMovil-padding-XS {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0%;
+    padding-right: 0%; }
+  .c-seccion--isMovil-padding-vertical-XS {
+    padding-top: 0%;
+    padding-bottom: 0%; }
+  .c-seccion--isMovil-padding-horizontal-XS {
+    padding-left: 0%;
+    padding-right: 0%; }
+  .c-seccion--isMovil-padding-top-XS {
+    padding-top: 0%; }
+  .c-seccion--isMovil-padding-bottom-XS {
+    padding-bottom: 0%; }
+  .c-seccion--isMovil-padding-left-XS {
+    padding-left: 0%; }
+  .c-seccion--isMovil-padding-right-XS {
+    padding-right: 0%; }
+  .c-seccion--isMovil-padding-S {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%; }
+  .c-seccion--isMovil-padding-vertical-S {
+    padding-top: 5%;
+    padding-bottom: 5%; }
+  .c-seccion--isMovil-padding-horizontal-S {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .c-seccion--isMovil-padding-top-S {
+    padding-top: 5%; }
+  .c-seccion--isMovil-padding-bottom-S {
+    padding-bottom: 5%; }
+  .c-seccion--isMovil-padding-left-S {
+    padding-left: 5%; }
+  .c-seccion--isMovil-padding-right-S {
+    padding-right: 5%; }
+  .c-seccion--isMovil-padding-M {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%; }
+  .c-seccion--isMovil-padding-vertical-M {
+    padding-top: 10%;
+    padding-bottom: 10%; }
+  .c-seccion--isMovil-padding-horizontal-M {
+    padding-left: 10%;
+    padding-right: 10%; }
+  .c-seccion--isMovil-padding-top-M {
+    padding-top: 10%; }
+  .c-seccion--isMovil-padding-bottom-M {
+    padding-bottom: 10%; }
+  .c-seccion--isMovil-padding-left-M {
+    padding-left: 10%; }
+  .c-seccion--isMovil-padding-right-M {
+    padding-right: 10%; }
+  .c-seccion--isMovil-padding-L {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 15%;
+    padding-right: 15%; }
+  .c-seccion--isMovil-padding-vertical-L {
+    padding-top: 15%;
+    padding-bottom: 15%; }
+  .c-seccion--isMovil-padding-horizontal-L {
+    padding-left: 15%;
+    padding-right: 15%; }
+  .c-seccion--isMovil-padding-top-L {
+    padding-top: 15%; }
+  .c-seccion--isMovil-padding-bottom-L {
+    padding-bottom: 15%; }
+  .c-seccion--isMovil-padding-left-L {
+    padding-left: 15%; }
+  .c-seccion--isMovil-padding-right-L {
+    padding-right: 15%; }
+  .c-seccion--isMovil-padding-XL {
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    padding-right: 20%; }
+  .c-seccion--isMovil-padding-vertical-XL {
+    padding-top: 20%;
+    padding-bottom: 20%; }
+  .c-seccion--isMovil-padding-horizontal-XL {
+    padding-left: 20%;
+    padding-right: 20%; }
+  .c-seccion--isMovil-padding-top-XL {
+    padding-top: 20%; }
+  .c-seccion--isMovil-padding-bottom-XL {
+    padding-bottom: 20%; }
+  .c-seccion--isMovil-padding-left-XL {
+    padding-left: 20%; }
+  .c-seccion--isMovil-padding-right-XL {
+    padding-right: 20%; } }
 
 .btn {
   text-decoration: none;
