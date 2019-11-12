@@ -1,17 +1,10 @@
 .menu {
   //background-color: $color-background-menu;
-  /*   padding-top: 25px;
-  padding-bottom: 24px; */
 
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   font-family: "calibri", Garamond, "Comic Sans";
-  margin-left: -20px;
-  margin-right: -8px;
-
-  
-
   @if $debug {
     border: 1px solid red;
   } @else {
@@ -27,37 +20,39 @@
   &__enlace {
     color: #99b4bb;
     text-decoration: none;
-    &:hover {
+    //margin-right: 2.7rem;
+    /* &:hover {
       color: #ffffff;
-    }
-
-   /*  @for $i from 1 through 5 {
-      &--tamanyo-#{$i} {
-        font-size: ($i * 2)+8px;
-      }
-    }
-
-    @each $talla, $iSize in $tallas {
-      &--tamanyo-#{$talla} {
-        font-size: #{$iSize};
-      }
     } */
-    @each $separacion, $iSize in $separacionItemsMenu {
-      &--margin-right-#{$separacion} {
-        margin-right: #{$iSize};
-      }
-    } 
-    
-    margin-right: 2.7rem;
-    
   }
   @for $i from 1 through 5 {
     &.menu--tamanyo-letra-#{$i} .menu__enlace {
-    font-size: ($i * 2)+8px;
+      font-size: ($i * 2)+8px;
+    }
+  }
+  @each $separacion, $iSize in $separacionItemsMenu {
+    &.menu--margin-right-#{$separacion} .menu__enlace {
+      margin-right: #{$iSize};
+    }
   }
 
-}
+  &.menu--font-bold .menu__enlace {
+    font-weight: bold;
+  }
 
+  @each $name, $color in $menu-over {
+    &.menu--font-hover-color-#{$name} .menu__enlace:hover {
+      color: #{$color};
+    }
+  }
+  &.menu--font-hover-color .menu__enlace {
+    font-weight: bold;
+  }
 
-    
+  @for $i from 1 through 5 {
+    &--padding-vertical-#{$i} {
+      padding-top: ($i * 2)+8px;
+      padding-bottom: ($i * 2)+8px;
+    }
+  }
 }
