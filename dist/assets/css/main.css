@@ -433,6 +433,8 @@ html {
     /* &:hover {
       color: #ffffff;
     } */ }
+  .menu__imagen {
+    height: 90px; }
   .menu.menu--tamanyo-letra-1 .menu__enlace {
     font-size: 10px; }
   .menu.menu--tamanyo-letra-2 .menu__enlace {
@@ -834,7 +836,7 @@ html {
   .c-homeservices__title {
     color: #ffffff;
     line-height: 1.5rem;
-    font-size: 30px;
+    -size: 30px;
     text-align: left; }
   .c-homeservices__text {
     color: #ffffff;

@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build":".\\scripts\\build.sh",
-    "deploy":"npm run build"
+    "build": ".\\scripts\\build.sh",
+    "deploy": "npm run build",
+    "serve": "onchange .\\src\\**\\* -- npm run deploy"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "onchange": "^6.1.0"
+  }
 }

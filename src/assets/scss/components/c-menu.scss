@@ -25,6 +25,9 @@
       color: #ffffff;
     } */
   }
+  &__imagen{
+    height: 90px;
+  }
   @for $i from 1 through 5 {
     &.menu--tamanyo-letra-#{$i} .menu__enlace {
       font-size: ($i * 2)+8px;
